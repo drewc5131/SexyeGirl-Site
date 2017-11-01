@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="commands.html">About</a>
+            <a class="nav-link" href="commands.html">Info</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="general.html">General</a>
@@ -38,16 +38,16 @@
             <a class="nav-link" href="admin.html">Admin<span class="sr-only">(current)</span></a>
           </li>
 		   <li class="nav-item">
-            <a class="nav-link" href="#">Reaction</a>
+            <a class="nav-link" href="reaction.html">Reaction</a>
           </li>
 		   <li class="nav-item">
-            <a class="nav-link" href="#">Messages</a>
+            <a class="nav-link" href="messages.html">Messages</a>
           </li>
 		   <li class="nav-item">
-            <a class="nav-link" href="#">Currency</a>
+            <a class="nav-link" href="currency.html">Currency</a>
           </li>
 		   <li class="nav-item">
-            <a class="nav-link" href="#">NSFW</a>
+            <a class="nav-link" href="nsfw.html">NSFW</a>
           </li>
         </ul>
         
@@ -81,69 +81,96 @@
   </thead>
   <tbody>
     <tr>
-      <td>ping</td>
-      <td>Shows the bot's latency.</td>
+      <td>users</td>
+      <td>Shows how many users are in the server.</td>
       <td>None</td>
     </tr>
     <tr>
-      <td>help</td>
-      <td>Get a list of commands</td>
-      <td>None</td>
+      <td>name (nickname)</td>
+      <td>Renames the bot</td>
+      <td>Manage Nicknames</td>
     </tr>
     <tr>
-      <td>prefix</td>
-      <td>Check what the prefix is, usually by mentioning the bot.</td>
-      <td>None</td>
+      <td>warn (user) (reason)</td>
+      <td>Warn a user for doing something wrong.</td>
+      <td>Kick Members</td>
     </tr>
 	<tr>
-      <td>invite</td>
-      <td>Have the bot send an invite link for itself.</td>
-      <td>None</td>
+      <td>mute (user) (time in minutes) (reason)</td>
+      <td>Mute a user from speaking in chat. Requires a "Muted" role. Reason parameter is optional.</td>
+      <td>Manage Roles</td>
     </tr>
 	<tr>
-      <td>vote (topic)</td>
-      <td>Cast a yes-no vote</td>
-      <td>None</td>
+      <td>unmute (user)</td>
+      <td>Unmutes a user</td>
+      <td>Manage Roles</td>
     </tr>
 	<tr>
-      <td>time</td>
-      <td>Get the time (EST)</td>
-      <td>None</td>
+      <td>blacklist (user)</td>
+      <td>Makes a user unable to run any of Sexy eGirl's commands. Requires a "Blacklist" role.</td>
+      <td>Manage Roles</td>
     </tr>
 	<tr>
-      <td>date</td>
-      <td>Get the date (EST)</td>
-      <td>None</td>
+      <td>whitelist (user)</td>
+      <td>Lets a user run Sexy eGirl's commands again.</td>
+      <td>Manage Roles</td>
     </tr>
 	<tr>
-      <td>avatar (user)</td>
-      <td>Have the bot send the user's avatar as an image</td>
-      <td>None</td>
+      <td>nick (user) (nickname)</td>
+      <td>Rename a user to something else.</td>
+      <td>Manage Nicknames</td>
     </tr>
 	<tr>
-      <td>rps (choice)</td>
-      <td>Play rock, paper, scissors!</td>
-      <td>None</td>
+      <td>setprefix (prefix)</td>
+      <td>Change the bot's prefix. Max 10 Characters.</td>
+      <td>Manage Guild</td>
     </tr>
-	
+	<tr>
+      <td>purge (amount)</td>
+      <td>Purge a certain amount of messages. Maximum 200.</td>
+      <td>Manage Messages</td>
+    </tr>
+	<tr>
+      <td>botpurge (amount)</td>
+      <td>Same function as purge, but only deletes Sexy eGirl's messages. Maximum 100.</td>
+      <td>Manage Messages</td>
+    </tr>
+	<tr>
+      <td>giverole (user) (role)</td>
+      <td>Give a user a role. NOTE: The bot cannot give roles that are above the roles that it has.</td>
+      <td>Manage Roles</td>
+    </tr>
+	<tr>
+      <td>takerole (user) (role)</td>
+      <td>Give a user a role. NOTE: The bot cannot take roles that are above the roles that it has.</td>
+      <td>Manage Roles</td>
+    </tr>
+	<tr>
+      <td>kick (user)</td>
+      <td>Kick a user from the server.</td>
+      <td>Kick Members</td>
+    </tr>
+	<tr>
+      <td>ban (user)</td>
+      <td>Ban a user from the server.</td>
+      <td>Ban Members</td>
+    </tr>
+	<tr>
+      <td>kackban (id)</td>
+      <td>Ban a user, even if they aren't in your server.</td>
+      <td>Ban Members</td>
+    </tr>
+	<tr>
+      <td>setdefaultrole (role)</td>
+      <td>Set a default role the bot gives a user when they join.</td>
+      <td>Administrator</td>
+    </tr>
   </tbody>
 </table>
+<br />
+<p class="lead">Tip: You don't have to mention a user, you can just put their Nickname or Username. Example -kick All Toasters Toast Toast ( 😕 )</p>
 
-<h1>Examples</h1>
 
 </div>
-	<div class="container">
-	<br />
-	<div class="col-md-3 col-sm-3 col-xs-6 col text-center">
-	<img class="rounded float-left example" src="images/screenshot3.png" alt="example1">
-	</div>
-	<div class="col-md-15 col text-center">
-	<img class="rounded float-right example" src="images/screenshot4.png" alt="example3" width="600" height="440">
-	</div>
+
 	
-	</div>
-	<div class="container">
-	<div class="col-md-3 col-sm-6 col text-center">
-	<img class="rounded float-left example" src="images/screenshot5.png" alt="example2" width="450" height="200">
-	
-	</div>

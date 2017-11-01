@@ -31,8 +31,8 @@
           <li class="nav-item">
             <a class="nav-link" href="commands.html">Info</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="general.html">General<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="general.html">General</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="admin.html">Admin</a>
@@ -40,8 +40,8 @@
 		   <li class="nav-item">
             <a class="nav-link" href="reaction.html">Reaction</a>
           </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="messages.html">Messages</a>
+		   <li class="nav-item active">
+            <a class="nav-link" href="messages.html">Messages<span class="sr-only">(current)</span></a>
           </li>
 		   <li class="nav-item">
             <a class="nav-link" href="currency.html">Currency</a>
@@ -66,9 +66,9 @@
 	padding-bottom: 1rem;
 	}
 	</style>
-		<h1>General Commands</h1>
+		<h1>Message Commands</h1>
 	<div class="info">
-		<p class="lead">These commands are ones that don't really have a specifed category,<br>or are just used, well, generally.</p>
+		<p class="lead">These commands let you toggle messages the bot sends, like alerts.<br>Can be toggled on and off whenever.</p>
 	</div>
 	<div class="container">
 	<table class="table table-striped">
@@ -81,60 +81,30 @@
   </thead>
   <tbody>
     <tr>
-      <td>ping</td>
-      <td>Shows the bot's latency.</td>
-      <td>None</td>
+      <td>setwelcomechannel (channel)</td>
+      <td>Set the channel to where welcome and leave messages are sent. Leave blank to disable.</td>
+      <td>Manage Channels</td>
     </tr>
     <tr>
-      <td>help</td>
-      <td>Get a list of commands</td>
-      <td>None</td>
+      <td>setwelcomemessage (message)</td>
+      <td>Set the welcome message for the server.</td>
+      <td>Manage Channels</td>
     </tr>
     <tr>
-      <td>prefix</td>
-      <td>Check what the prefix is, usually by mentioning the bot.</td>
-      <td>None</td>
+      <td>setleavemessage (message)</td>
+      <td>Set the leave message for the server. </td>
+      <td>Manage Channels</td>
     </tr>
 	<tr>
-      <td>report (msg)</td>
-      <td>Report a bug or error directly the owner! (Abuse will get your access for this command removed)</td>
-      <td>None</td>
+      <td>setmodlogchannel (channel)</td>
+      <td>Set the channel where modlog messages are sent. Leave blank to disable.</td>
+      <td>Manage Channels</td>
     </tr>
-	<tr>
-      <td>invite</td>
-      <td>Have the bot send an invite link for itself.</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>vote (topic)</td>
-      <td>Cast a yes-no vote</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>time</td>
-      <td>Get the time (EST)</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>date</td>
-      <td>Get the date (EST)</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>avatar (user)</td>
-      <td>Have the bot send the user's avatar as an image</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>rps (choice)</td>
-      <td>Play rock, paper, scissors!</td>
-      <td>None</td>
-    </tr>
+	
 	
   </tbody>
 </table>
 <br />
-<p class="lead">Tip: This is a tip! Look for these under every list of commands for helpful information.</p>
-
+<p class="lead">Tip: Put [userMention] to mention a user in the welcome/leave message, or put [userUsername] to put their username! (Note: Username can be buggy.)<br>Example: -setwelcomemessage [userMention] welcome to the server!</p>
 </div>
 	
