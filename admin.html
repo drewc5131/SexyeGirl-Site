@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <title>Sexy eGirl</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
@@ -18,169 +18,172 @@
   </head>
 
   <body>
-	<nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">
-		<img src="images/avatar.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-		Sexy eGirl
-	  </a>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="commands.html">Info</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="general.html">General</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="admin.html">Admin<span class="sr-only">(current)</span></a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="reaction.html">Reaction</a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="messages.html">Messages</a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="currency.html">Currency</a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="nsfw.html">NSFW</a>
-          </li>
-		<li class="nav-item">
-            <a class="nav-link" href="gamestats.html">Osu! Stats</a>
-          </li>
-        </ul>
-        
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+              <img src="images/avatar.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+              Sexy eGirl
+          </a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="commands.html">Info</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="general.html">General</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="admin.html">Admin<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="reaction.html">Reaction</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="messages.html">Messages</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="currency.html">Currency</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="nsfw.html">NSFW</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="gamestats.html">Osu! Stats</a>
+                  </li>
+              </ul>
+
+          </div>
+      </nav>
+      <style>
+          h1 {
+              text-align: center;
+              padding-top: 1rem;
+          }
+
+          .info {
+              text-align: center;
+              padding: 1rem 1.5rem;
+          }
+
+          .example {
+              padding-bottom: 1rem;
+          }
+      </style>
+      <h1>Admin Commands</h1>
+      <div class="info">
+          <p class="lead">These commands help keep your server safe and under control.<br>Most require specific permissions to use, and some require a specific role to be created.</p>
       </div>
-    </nav>
-	<style>
-	h1 {
-	text-align: center;
-	padding-top: 1rem;
-	}
-	.info {
-	text-align: center;
-	padding: 1rem 1.5rem;
-	}
-	.example{
-	padding-bottom: 1rem;
-	}
-	</style>
-		<h1>Admin Commands</h1>
-	<div class="info">
-		<p class="lead">These commands help keep your server safe and under control.<br>Most require specific permissions to use, and some require a specific role to be created.</p>
-	</div>
-	<div class="container">
-	<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Command</th>
-      <th>Function</th>
-      <th>Required Permissions?</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr>
-      <td>name (nickname)</td>
-      <td>Renames the bot</td>
-      <td>Manage Nicknames</td>
-    </tr>
-    <tr>
-      <td>warn (user) (reason)</td>
-      <td>Warn a user for doing something wrong.</td>
-      <td>Kick Members</td>
-    </tr>
-	<tr>
-      <td>mute (user) (time in minutes) (reason)</td>
-      <td>Mute a user from speaking in chat. Requires a "Muted" role. Reason parameter is optional.</td>
-      <td>Manage Roles</td>
-    </tr>
-	<tr>
-      <td>unmute (user)</td>
-      <td>Unmutes a user</td>
-      <td>Manage Roles</td>
-    </tr>
-  <tr>
-      <td>lockdown (enable/disable)</td>
-      <td>Enables or Disables lockdown mode, which automatically applies the "Muted" role to everyone who joins. Useful for anti-raids.</td>
-      <td>Manage Guild</td>
-    </tr>
-	<tr>
-      <td>blacklist (user)</td>
-      <td>Makes a user unable to run any of Sexy eGirl's commands. Requires a "Blacklist" role.</td>
-      <td>Manage Roles</td>
-    </tr>
-	<tr>
-      <td>whitelist (user)</td>
-      <td>Lets a user run Sexy eGirl's commands again.</td>
-      <td>Manage Roles</td>
-    </tr>
-	<tr>
-      <td>nick (user) (nickname)</td>
-      <td>Rename a user to something else.</td>
-      <td>Manage Nicknames</td>
-    </tr>
-	<tr>
-      <td>setprefix (prefix)</td>
-      <td>Change the bot's prefix. Max 10 Characters.</td>
-      <td>Manage Guild</td>
-    </tr>
-	<tr>
-      <td>purge (amount) (user[optional])</td>
-      <td>Purge a certain amount of messages. Maximum 200.</td>
-      <td>Manage Messages</td>
-    </tr>
-	<tr>
-      <td>botpurge (amount)</td>
-      <td>Same function as purge, but only deletes Sexy eGirl's messages. Maximum 100.</td>
-      <td>Manage Messages</td>
-    </tr>
-	<tr>
-      <td>giverole (user) (role)</td>
-      <td>Give a user a role. NOTE: The bot cannot give roles that are above the roles that it has.</td>
-      <td>Manage Roles</td>
-    </tr>
-	<tr>
-      <td>takerole (user) (role)</td>
-      <td>Give a user a role. NOTE: The bot cannot take roles that are above the roles that it has.</td>
-      <td>Manage Roles</td>
-    </tr>
-	<tr>
-      <td>kick (user)</td>
-      <td>Kick a user from the server.</td>
-      <td>Kick Members</td>
-    </tr>
-	<tr>
-      <td>ban (user)</td>
-      <td>Ban a user from the server.</td>
-      <td>Ban Members</td>
-    </tr>
-	<tr>
-      <td>kackban (id)</td>
-      <td>Ban a user, even if they aren't in your server.</td>
-      <td>Ban Members</td>
-    </tr>
-	<tr>
-      <td>setdefaultrole (role)</td>
-      <td>Set a default role the bot gives a user when they join.</td>
-      <td>Administrator</td>
-    </tr>
- 
-  </tbody>
-</table>
-<br />
-<p class="lead">Tip: You don't have to mention a user, you can just put their Nickname or Username. Example -kick All Toasters Toast Toast</p>
+      <div class="container">
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Command</th>
+                      <th>Function</th>
+                      <th>Required Permissions?</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+                  <tr>
+                      <td>name (nickname)</td>
+                      <td>Renames the bot</td>
+                      <td>Manage Nicknames</td>
+                  </tr>
+                  <tr>
+                      <td>warn (user) (reason)</td>
+                      <td>Warn a user for doing something wrong.</td>
+                      <td>Kick Members</td>
+                  </tr>
+                  <tr>
+                      <td>mute (user) (time in minutes) (reason)</td>
+                      <td>Mute a user from speaking in chat. Requires a "Muted" role. Reason parameter is optional.</td>
+                      <td>Manage Roles</td>
+                  </tr>
+                  <tr>
+                      <td>unmute (user)</td>
+                      <td>Unmutes a user</td>
+                      <td>Manage Roles</td>
+                  </tr>
+                  <tr>
+                      <td>lockdown (enable/disable)</td>
+                      <td>Enables or Disables lockdown mode, which automatically applies the "Muted" role to everyone who joins. Useful for anti-raids.</td>
+                      <td>Manage Guild</td>
+                  </tr>
+                  <tr>
+                      <td>blacklist (user)</td>
+                      <td>Makes a user unable to run any of Sexy eGirl's commands. Requires a "Blacklist" role.</td>
+                      <td>Manage Roles</td>
+                  </tr>
+                  <tr>
+                      <td>whitelist (user)</td>
+                      <td>Lets a user run Sexy eGirl's commands again.</td>
+                      <td>Manage Roles</td>
+                  </tr>
+                  <tr>
+                      <td>nick (user) (nickname)</td>
+                      <td>Rename a user to something else.</td>
+                      <td>Manage Nicknames</td>
+                  </tr>
+                  <tr>
+                      <td>setprefix (prefix)</td>
+                      <td>Change the bot's prefix. Max 10 Characters.</td>
+                      <td>Manage Guild</td>
+                  </tr>
+                  <tr>
+                      <td>purge (amount) (user[optional])</td>
+                      <td>Purge a certain amount of messages. Maximum 200.</td>
+                      <td>Manage Messages</td>
+                  </tr>
+                  <tr>
+                      <td>botpurge (amount)</td>
+                      <td>Same function as purge, but only deletes Sexy eGirl's messages. Maximum 100.</td>
+                      <td>Manage Messages</td>
+                  </tr>
+                  <tr>
+                      <td>giverole (user) (role)</td>
+                      <td>Give a user a role. NOTE: The bot cannot give roles that are above the roles that it has.</td>
+                      <td>Manage Roles</td>
+                  </tr>
+                  <tr>
+                      <td>takerole (user) (role)</td>
+                      <td>Give a user a role. NOTE: The bot cannot take roles that are above the roles that it has.</td>
+                      <td>Manage Roles</td>
+                  </tr>
+                  <tr>
+                      <td>kick (user)</td>
+                      <td>Kick a user from the server.</td>
+                      <td>Kick Members</td>
+                  </tr>
+                  <tr>
+                      <td>ban (user)</td>
+                      <td>Ban a user from the server.</td>
+                      <td>Ban Members</td>
+                  </tr>
+                  <tr>
+                      <td>kackban (id)</td>
+                      <td>Ban a user, even if they aren't in your server.</td>
+                      <td>Ban Members</td>
+                  </tr>
+                  <tr>
+                      <td>setdefaultrole (role)</td>
+                      <td>Set a default role the bot gives a user when they join.</td>
+                      <td>Administrator</td>
+                  </tr>
+
+              </tbody>
+          </table>
+          <br />
+          <p class="lead">Tip: You don't have to mention a user, you can just put their Nickname or Username. Example -kick All Toasters Toast Toast</p>
 
 
-</div>
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-	</body>
+      </div>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  </body>
 </html>
 	

@@ -1,0 +1,32 @@
+﻿body {
+    background-image: url(https://www.hdwallpapers.in/walls/blurred_colors-wide.jpg);
+    background-size:cover
+}
+
+.navbar{
+    background:white;
+    box-shadow: black 0px 2px 10px 2px;
+    padding:5px;
+}
+
+.nav-link{
+    transition: .2s all;
+    border-bottom: 0px solid transparent;
+    border-bottom-width: 2px;
+    text-align:center;
+}
+
+.nav-link:hover{
+    border-bottom: 2px black solid;
+}
+
+.main-pfp {
+    box-shadow: black 2px 2px 10px 2px;   
+}
+
+.rounded-card {
+    background: white;
+    box-shadow: black 0px 2px 4px 0px;
+    border-radius:20px;
+    padding:10px;
+}

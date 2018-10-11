@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <title>Sexy eGirl</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
@@ -18,121 +18,124 @@
   </head>
 
   <body>
-	<nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">
-		<img src="images/avatar.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-		Sexy eGirl
-	  </a>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="commands.html">Info</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="general.html">General</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="admin.html">Admin</a>
-          </li>
-		   <li class="nav-item active">
-            <a class="nav-link" href="reaction.html">Reaction<span class="sr-only">(current)</span></a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="messages.html">Messages</a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="currency.html">Currency</a>
-          </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="nsfw.html">NSFW</a>
-          </li>
-		<li class="nav-item">
-            <a class="nav-link" href="gamestats.html">Osu! Stats</a>
-          </li>
-        </ul>
-        
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+              <img src="images/avatar.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+              Sexy eGirl
+          </a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="commands.html">Info</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="general.html">General</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="admin.html">Admin</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="reaction.html">Reaction<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="messages.html">Messages</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="currency.html">Currency</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="nsfw.html">NSFW</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="gamestats.html">Osu! Stats</a>
+                  </li>
+              </ul>
+
+          </div>
+      </nav>
+      <style>
+          h1 {
+              text-align: center;
+              padding-top: 1rem;
+          }
+
+          .info {
+              text-align: center;
+              padding: 1rem 1.5rem;
+          }
+
+          .example {
+              padding-bottom: 1rem;
+          }
+      </style>
+      <h1>Reaction Commands</h1>
+      <div class="info">
+          <p class="lead">These are commands the bot "reacts" to.<br>Most of these were recommendations by you!</p>
       </div>
-    </nav>
-	<style>
-	h1 {
-	text-align: center;
-	padding-top: 1rem;
-	}
-	.info {
-	text-align: center;
-	padding: 1rem 1.5rem;
-	}
-	.example{
-	padding-bottom: 1rem;
-	}
-	</style>
-		<h1>Reaction Commands</h1>
-	<div class="info">
-		<p class="lead">These are commands the bot "reacts" to.<br>Most of these were recommendations by you!</p>
-	</div>
-	<div class="container">
-	<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Command</th>
-      <th>Function</th>
-      <th>Required Permissions?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>8ball (question)</td>
-      <td>Ask the magic 8Ball a question.</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>sauce</td>
-      <td>WHERE'S THE LAMB SAUCE?!?!?!</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>disgust</td>
-      <td>Show your utter disgust of something.</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>thot (thing)</td>
-      <td>See if a user/thing is on the Thot-O-Meter.</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>ship (thing1) (thing2)</td>
-      <td>See if two things are compatible!</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>sop (thing)</td>
-      <td>Ask the bot if it would smash or pass something. (eDating a bot? -disgust)</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>choose (thing1) (thing2)</td>
-      <td>Have the bot choose between two things.</td>
-      <td>None</td>
-    </tr>
-	<tr>
-      <td>hold (user)</td>
-      <td>Have the bot hold up a user's avatar!</td>
-      <td>None</td>
-    </tr>
-	
-	
-  </tbody>
-</table>
-<br />
-<p class="lead">Tip: Put "quotes" around something for a more than one word entry. Example -choose "eat breakfast" "don't eat breakfast"</p>
-</div>
- <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>	
-	</body>
+      <div class="container">
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th>Command</th>
+                      <th>Function</th>
+                      <th>Required Permissions?</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>8ball (question)</td>
+                      <td>Ask the magic 8Ball a question.</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>sauce</td>
+                      <td>WHERE'S THE LAMB SAUCE?!?!?!</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>disgust</td>
+                      <td>Show your utter disgust of something.</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>thot (thing)</td>
+                      <td>See if a user/thing is on the Thot-O-Meter.</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>ship (thing1) (thing2)</td>
+                      <td>See if two things are compatible!</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>sop (thing)</td>
+                      <td>Ask the bot if it would smash or pass something. (eDating a bot? -disgust)</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>choose (thing1) (thing2)</td>
+                      <td>Have the bot choose between two things.</td>
+                      <td>None</td>
+                  </tr>
+                  <tr>
+                      <td>hold (user)</td>
+                      <td>Have the bot hold up a user's avatar!</td>
+                      <td>None</td>
+                  </tr>
+
+
+              </tbody>
+          </table>
+          <br />
+          <p class="lead">Tip: Put "quotes" around something for a more than one word entry. Example -choose "eat breakfast" "don't eat breakfast"</p>
+      </div>
+      <!-- Placed at the end of the document so the pages load faster -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  </body>
 </html>
