@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -12,119 +12,659 @@
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/materialize.css">
+
     <link href="css/navbar.css" rel="stylesheet">
-	 <link href="css/featurettes.css" rel="stylesheet">
-  </head>
+    <link href="css/main.css" rel="stylesheet" />
 
-  <body>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-faded">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-              <img src="images/avatar.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-              Sexy eGirl
-          </a>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="commands.html">Info<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="general.html">General</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="admin.html">Admin</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="reaction.html">Reaction</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="messages.html">Messages</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="currency.html">Currency</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="nsfw.html">NSFW</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="gamestats.html">Osu! Stats</a>
-                  </li>
-              </ul>
 
-          </div>
-      </nav>
-      <style>
-          h1 {
-              text-align: center;
-              padding-top: 1rem;
-          }
+</head>
 
-          h5 {
-              text-align: center;
-              padding-top: 1rem;
-          }
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/avatar.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Sexy eGirl
+        </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discordapp.com/oauth2/authorize?&client_id=343569690972389398&scope=bot&permissions=2146958583">Invite</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="commands.html">Commands<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="updates.html">Updates</a>
+                </li>
+            </ul>
 
-          .info {
-              text-align: center;
-              padding: 1rem 1.5rem;
-          }
-      </style>
-      <h1>Commands</h1>
-      <h5>The Default prefix is - , but can be customized whenever you like!</h5>
-      <div class="info">
-          <p class="lead">Below is a sneak peak of what the bot has to offer.<br>To take a look at all of the commands Sexy eGirl has, click one of the categories at the top.<br>To go back to the main page, click the bot's name in the top left corner.</p>
-      </div>
-      <div class="container marketing">
+        </div>
+    </nav>
+    <style>
+        h1 {
+            text-align: center;
+            padding-top: 1rem;
+        }
 
-          <hr class="featurette-divider">
+        h5 {
+            text-align: center;
+            padding-top: 1rem;
+        }
 
-          <div class="row featurette">
+        .info {
+            text-align: center;
+            padding: 1rem 1.5rem;
+        }
+    </style>
+    <div class="rounded-card">
+        <ul class="tabs z-depth-1">
+            <li class="tab"><a href="#infotab">Info</a></li>
+            <li class="tab"><a href="#gentab">General</a></li>
+            <li class="tab"><a href="#admtab">Admin</a></li>
+            <li class="tab"><a href="#reacttab">Reaction</a></li>
+            <li class="tab"><a href="#msgtab">Messages</a></li>
+            <li class="tab"><a href="#curtab">Currency</a></li>
+            <li class="tab"><a href="#nsfwtab">NSFW</a></li>
+            <li class="tab"><a href="#osutab">Osu! Stats</a></li>
+        </ul>
+        <div id="infotab" class="col s12">
+            <h5>The Default prefix is - , but can be customized whenever you like!</h5>
+            <div class="info">
+                <p class="lead">Below is a sneak peak of what the bot has to offer.<br>To take a look at all of the commands Sexy eGirl has, click one of the categories at the top.<br>To go back to the main page, click the bot's name in the top left corner.</p>
+            </div>
+            <div class="container marketing">
 
-              <div class="col-md-7">
-                  <h2 class="featurette-heading">Commands For You and Your Server to Enjoy</h2>
-                  <p class="lead">Immerse your members with the many fun and enjoyable commands included with this bot. Pass the time with things like 8Ball, Shipping, and more!</p>
-              </div>
-              <div class="col-md-5">
-                  <video width="620" height="440" autoplay style="height: 530px; border-radius: 10px; margin-left:auto; margin-right:auto; display:block">
-                      <source src="videos/discord1.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                  </video>
-              </div>
-          </div>
+                <hr class="featurette-divider">
 
-          <hr class="featurette-divider">
+                <div class="row featurette">
 
-          <div class="row featurette">
-              <div class="col-md-7 push-md-5">
-                  <h2 class="featurette-heading">Currency and Backgrounds</h2>
-                  <p class="lead">Gain and lose your money by gambling and rolling slots, then show off to everyone else with one of the many purchasable backgrounds.</p>
-              </div>
-              <div class="col-md-5 pull-md-7">
-                  <img class="featurette-image img-fluid mx-auto" src="images/screenshot.png" alt="Generic placeholder image">
-              </div>
-          </div>
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Commands For You and Your Server to Enjoy</h2>
+                        <p class="lead">Immerse your members with the many fun and enjoyable commands included with this bot. Pass the time with things like 8Ball, Shipping, and more!</p>
+                    </div>
+                    <div class="col-md-5">
+                        <video width="620" height="440" autoplay style="height: 530px; border-radius: 10px; margin-left:auto; margin-right:auto; display:block">
+                            <source src="videos/discord1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
 
-          <hr class="featurette-divider">
+                <hr class="featurette-divider">
 
-          <div class="row featurette">
-              <div class="col-md-7">
-                  <h2 class="featurette-heading">Moderate Your Server Like Never Before</h2>
-                  <p class="lead">Tons and tons of moderation commands to keep your server safe and in control. Also, the ability to blacklist anyone from using Sexy eGirl's commands with a simple command.</p>
-              </div>
-              <div class="col-md-5">
-                  <img class="featurette-image img-fluid mx-auto" src="images/screenshot2.png" alt="Generic placeholder image">
-              </div>
-          </div>
+                <div class="row featurette">
+                    <div class="col-md-7 push-md-5">
+                        <h2 class="featurette-heading">Currency and Backgrounds</h2>
+                        <p class="lead">Gain and lose your money by gambling and rolling slots, then show off to everyone else with one of the many purchasable backgrounds.</p>
+                    </div>
+                    <div class="col-md-5 pull-md-7">
+                        <img class="featurette-image img-fluid mx-auto" src="images/screenshot.png" alt="Generic placeholder image">
+                    </div>
+                </div>
 
-          <hr class="featurette-divider">
-      </div>
-      <!-- Placed at the end of the document so the pages load faster -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  </body>
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Moderate Your Server Like Never Before</h2>
+                        <p class="lead">Tons and tons of moderation commands to keep your server safe and in control. Also, the ability to blacklist anyone from using Sexy eGirl's commands with a simple command.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-fluid mx-auto" src="images/screenshot2.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gentab" class="col s12">
+            <h1>General Commands</h1>
+            <div class="info">
+                <p class="lead">These commands are ones that don't really have a specifed category,<br>or are just used, well, generally.</p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ping</td>
+                            <td>Shows the bot's latency.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>help</td>
+                            <td>Get a list of commands</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>prefix</td>
+                            <td>Check what the prefix is, usually by mentioning the bot.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>donate</td>
+                            <td>Gives you a link to donate to the bot.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>report (msg)</td>
+                            <td>Report a bug or error directly the owner! (Abuse will get your access for this command removed)</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>invite</td>
+                            <td>Have the bot send an invite link for itself.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>vote (topic)</td>
+                            <td>Cast a yes-no vote</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>time</td>
+                            <td>Get the time (EST)</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>date</td>
+                            <td>Get the date (EST)</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>avatar (user)</td>
+                            <td>Have the bot send the user's avatar as an image</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>serverinfo</td>
+                            <td>Get information about the current server</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>userinfo (user)</td>
+                            <td>Get information about the input user</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>rps (choice)</td>
+                            <td>Play rock, paper, scissors!</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>rate (thing)</td>
+                            <td>Have the bot rate something</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>clap (words)</td>
+                            <td>Replaces every space in whatever is entered with a clap emoji</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>updates</td>
+                            <td>View recent changes to the bot</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>playing (game)</td>
+                            <td>See who is playing a certain game! (Must be specific)</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>servers</td>
+                            <td>See how many servers the bot is in!</td>
+                            <td>None</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: This is a tip! Look for these under every list of commands for helpful information.</p>
+
+            </div>
+        </div>
+
+        <div id="admtab" class="col s12">
+            <h1>Admin Commands</h1>
+            <div class="info">
+                <p class="lead">These commands help keep your server safe and under control.<br>Most require specific permissions to use, and some require a specific role to be created.</p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>name (nickname)</td>
+                            <td>Renames the bot</td>
+                            <td>Manage Nicknames</td>
+                        </tr>
+                        <tr>
+                            <td>warn (user) (reason)</td>
+                            <td>Warn a user for doing something wrong.</td>
+                            <td>Kick Members</td>
+                        </tr>
+                        <tr>
+                            <td>mute (user) (time in minutes) (reason)</td>
+                            <td>Mute a user from speaking in chat. Requires a "Muted" role. Reason parameter is optional.</td>
+                            <td>Manage Roles</td>
+                        </tr>
+                        <tr>
+                            <td>unmute (user)</td>
+                            <td>Unmutes a user</td>
+                            <td>Manage Roles</td>
+                        </tr>
+                        <tr>
+                            <td>lockdown (enable/disable)</td>
+                            <td>Enables or Disables lockdown mode, which automatically applies the "Muted" role to everyone who joins. Useful for anti-raids.</td>
+                            <td>Manage Guild</td>
+                        </tr>
+                        <tr>
+                            <td>blacklist (user)</td>
+                            <td>Makes a user unable to run any of Sexy eGirl's commands. Requires a "Blacklist" role.</td>
+                            <td>Manage Roles</td>
+                        </tr>
+                        <tr>
+                            <td>whitelist (user)</td>
+                            <td>Lets a user run Sexy eGirl's commands again.</td>
+                            <td>Manage Roles</td>
+                        </tr>
+                        <tr>
+                            <td>nick (user) (nickname)</td>
+                            <td>Rename a user to something else.</td>
+                            <td>Manage Nicknames</td>
+                        </tr>
+                        <tr>
+                            <td>setprefix (prefix)</td>
+                            <td>Change the bot's prefix. Max 10 Characters.</td>
+                            <td>Manage Guild</td>
+                        </tr>
+                        <tr>
+                            <td>purge (amount) (user[optional])</td>
+                            <td>Purge a certain amount of messages. Maximum 200.</td>
+                            <td>Manage Messages</td>
+                        </tr>
+                        <tr>
+                            <td>botpurge (amount)</td>
+                            <td>Same function as purge, but only deletes Sexy eGirl's messages. Maximum 100.</td>
+                            <td>Manage Messages</td>
+                        </tr>
+                        <tr>
+                            <td>giverole (user) (role)</td>
+                            <td>Give a user a role. NOTE: The bot cannot give roles that are above the roles that it has.</td>
+                            <td>Manage Roles</td>
+                        </tr>
+                        <tr>
+                            <td>takerole (user) (role)</td>
+                            <td>Give a user a role. NOTE: The bot cannot take roles that are above the roles that it has.</td>
+                            <td>Manage Roles</td>
+                        </tr>
+                        <tr>
+                            <td>kick (user)</td>
+                            <td>Kick a user from the server.</td>
+                            <td>Kick Members</td>
+                        </tr>
+                        <tr>
+                            <td>ban (user)</td>
+                            <td>Ban a user from the server.</td>
+                            <td>Ban Members</td>
+                        </tr>
+                        <tr>
+                            <td>kackban (id)</td>
+                            <td>Ban a user, even if they aren't in your server.</td>
+                            <td>Ban Members</td>
+                        </tr>
+                        <tr>
+                            <td>setdefaultrole (role)</td>
+                            <td>Set a default role the bot gives a user when they join.</td>
+                            <td>Administrator</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: You don't have to mention a user, you can just put their Nickname or Username. Example -kick All Toasters Toast Toast</p>
+
+
+            </div>
+        </div>
+
+        <div id="reacttab" class="col s12">
+            <h1>Reaction Commands</h1>
+            <div class="info">
+                <p class="lead">These are commands the bot "reacts" to.<br>Most of these were recommendations by you!</p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8ball (question)</td>
+                            <td>Ask the magic 8Ball a question.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>sauce</td>
+                            <td>WHERE'S THE LAMB SAUCE?!?!?!</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>disgust</td>
+                            <td>Show your utter disgust of something.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>thot (thing)</td>
+                            <td>See if a user/thing is on the Thot-O-Meter.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>ship (thing1) (thing2)</td>
+                            <td>See if two things are compatible!</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>sop (thing)</td>
+                            <td>Ask the bot if it would smash or pass something. (eDating a bot? -disgust)</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>choose (thing1) (thing2)</td>
+                            <td>Have the bot choose between two things.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>hold (user)</td>
+                            <td>Have the bot hold up a user's avatar!</td>
+                            <td>None</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: Put "quotes" around something for a more than one word entry. Example -choose "eat breakfast" "don't eat breakfast"</p>
+            </div>
+        </div>
+
+        <div id="msgtab" class="col s12">
+            <h1>Message Commands</h1>
+            <div class="info">
+                <p class="lead">These commands let you toggle messages the bot sends, like alerts.<br>Can be toggled on and off whenever.</p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>setwelcomechannel (channel)</td>
+                            <td>Set the channel to where welcome and leave messages are sent. Leave blank to disable.</td>
+                            <td>Manage Channels</td>
+                        </tr>
+                        <tr>
+                            <td>setwelcomemessage (message)</td>
+                            <td>Set the welcome message for the server.</td>
+                            <td>Manage Channels</td>
+                        </tr>
+                        <tr>
+                            <td>setwelcomeimage (image url)</td>
+                            <td>Send an image every time someone joins the server. Put "disable" to disable welcome images</td>
+                            <td>Manage Channels</td>
+                        </tr>
+                        <tr>
+                            <td>setleavemessage (message)</td>
+                            <td>Set the leave message for the server. </td>
+                            <td>Manage Channels</td>
+                        </tr>
+                        <tr>
+                            <td>setmodlogchannel (channel)</td>
+                            <td>Set the channel where modlog messages are sent. Leave blank to disable.</td>
+                            <td>Manage Channels</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: Put [userMention] to mention a user in the welcome/leave message, or put [userUsername] to put their username! (Note: Username can be buggy, and mentions will likely not show up properly on mobile when used for leave messages.)<br>Example: -setwelcomemessage [userMention] welcome to the server!</p>
+            </div>
+        </div>
+
+        <div id="curtab" class="col s12">
+            <h1>Currency Commands</h1>
+            <div class="info">
+                <p class="lead">These commands are all about the bot's currency system.<br>Try to become as rich as you can! </p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bal</td>
+                            <td>Shows you your account.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>send (user) (amount)</td>
+                            <td>Send someone else money.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>slots</td>
+                            <td>Roll a slot machine! 3 coins per roll.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>winnings</td>
+                            <td>View the win values for the slot machine.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>gamble (amount)</td>
+                            <td>Risk your money for a chance of a 2x or 3x profit!</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>daily</td>
+                            <td>Claim free money once a day.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background</td>
+                            <td>See which backgrounds you do and do not own.</td>
+                            <td>None</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>background donator</td>
+                            <td>See which donator backgrounds you do and do not own.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background shop</td>
+                            <td>View the backgrounds for sale.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background shop donator</td>
+                            <td>View the donator backgrounds for sale. You must be of at least Donator status to buy these backgrounds.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background buy (name)</td>
+                            <td>Purchase a background! Automatically sets it as your active background.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background sell (name)</td>
+                            <td>Sell a background for an 80% refund.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background set(name)</td>
+                            <td>Set your background.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>background preview (name)</td>
+                            <td>Preview a background before you buy it.</td>
+                            <td>None</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: It isn't smart to gamble all your money at once. Try and slowly gain money to become rich!</p>
+            </div>
+        </div>
+
+        <div id="nsfwtab" class="col s12">
+            <h1>NSFW Commands</h1>
+            <div class="info">
+                <p class="lead">These commands are for the...wilder side of people.<br>Requires a channel to be marked as NSFW under the options.<i>Naming no longer matters as of update 0.9.5</i></p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>tits</td>
+                            <td>Sends a random tit image.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>butt</td>
+                            <td>Sends a random butt image.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>danbooru (tag) or db (tag)</td>
+                            <td>Sends an image from Danbooru, random if no tag is entered.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>gelbooru (tag) or gb (tag)</td>
+                            <td>Sends an image from Gelbooru, random if no tag is entered.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>rule34 (tag)</td>
+                            <td>Sends an image from Rule34, random if no tag is entered.</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>nsfw (tag) or hentai (tag)</td>
+                            <td>Sends an image from one of the three websites, randomly chosen, image is random if no tag is entered.</td>
+                            <td>None</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: If your NSFW commands are not working, make sure the channel is MARKED as nsfw under the channel settings.</p>
+            </div>
+        </div>
+
+        <div id="osutab" class="col s12">
+            <h1>Osu! Stats Commands</h1>
+            <div class="info">
+                <p class="lead">Get statistics for Osu!<br>More options will be added soon!</p>
+            </div>
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Function</th>
+                            <th>Required Permissions?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>setosu (username)</td>
+                            <td>Link the entered osu! account to your Discord</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>removeosu</td>
+                            <td>Remove the entered osu! account from your Discord</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>osu</td>
+                            <td>Get the Osu! Profile for the username set</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>recent</td>
+                            <td>Get the most recent play for the username set</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>top</td>
+                            <td>Get the top 5 Osu! plays for the username set</td>
+                            <td>None</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br />
+                <p class="lead">Tip: Make sure you type your username correctly!</p>
+            </div>
+        </div>
+
+    </div>
+
+        <hr class="featurette-divider">
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        window.onload += M.AutoInit();
+    </script>
+</body>
 </html>
